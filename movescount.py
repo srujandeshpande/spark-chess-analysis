@@ -18,7 +18,7 @@ def game_map(lines):
     num_moves = len(lineArr) - 16
     return (num_moves, 1)
 
-sortedRDD = table2.map(game_map).reduceByKey(lambda a,b: a+b)
+sortedRDD = table3.map(game_map).reduceByKey(lambda a,b: a+b)
 
 sortedRDD.saveAsTextFile("hdfs://chess2-m/user/hdfs/out2")
 

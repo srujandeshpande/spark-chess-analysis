@@ -13,6 +13,8 @@ kaggle datasets download milesh1/35-million-chess-games
 
 sudo apt install unzip
 
+unzip 30*
+
 
 srujan_deshpande@chess2-m:~$ cat wordcount.py
 import sys
@@ -45,3 +47,5 @@ hdfs dfs -put test.txt /user/hdfs/test
 hdfs dfs -rm -r /user/hdfs/out
 
 spark-submit pp.py 
+
+hdfs dfs -put data.txt /user/hdfs
