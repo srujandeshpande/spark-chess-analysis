@@ -41,3 +41,7 @@ srujan_deshpande@chess2-m:~$ hdfs dfs -cat /user/hdfs/out.txt/part*
 
 
 hdfs dfs -put test.txt /user/hdfs/test
+
+hdfs dfs -rm -r /user/hdfs/out
+
+spark-submit pp.py 
